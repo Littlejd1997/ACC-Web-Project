@@ -1,0 +1,16 @@
+<div class="center jumbotron">
+<p id="notice"><%= notice %></p>
+<%= image_tag @person.gravatar_url %>
+<p>
+  <h1><%= @person.name %></h1>
+</p>
+</div>
+<p>
+  <strong>Age:</strong>
+  <%= @person.age %>
+</p>
+
+<p>
+  <strong>Bio:</strong>
+  <%= @person.bio %>
+</p>
