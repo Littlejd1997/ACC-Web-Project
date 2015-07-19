@@ -13,10 +13,20 @@
   <![endif]-->
 </head>
 <body>
+<header>
+  <div class="container text-center">
+  <%= link_to "<h4>Home</h4>".html_safe, "/" %>
+      </div>
+  </header>
   <div class="container">
 <%= yield %>
-    <%= link_to "Rails Tutorial", "https://www.railstutorial.org/" %>
-</div>
 
+</div>
+<footer style="position:fixed;bottom:5%;width: 100%">
+  <div class="container text-center">
+  <%= link_to "Rails Tutorial", "https://www.railstutorial.org/" %>
+    <%= link_to "Austin Community College", "http://www.austincc.edu/" %>
+      </div>
+    </footer>
 </body>
 </html>
